@@ -65,7 +65,14 @@
       a{font-family:宋体;font-size:13px;color:#b7b0a3;}
       li>a:hover{color:#ff8e00;}
     </style>
-   
+    <script type="text/javascript">
+  var visits = 0;
+  if (localStorage.getItem('visits')) {
+    visits = localStorage.getItem('visits');
+  }
+  localStorage.setItem('visits', parseInt(visits) + 1);
+  document.write('访问数：' + localStorage.getItem('visits'));
+</script>
 
   </head>
   <body style="">	
