@@ -66,12 +66,12 @@
       li>a:hover{color:#ff8e00;}
     </style>
     <script type="text/javascript">
-  var visits = 0;
-  if (localStorage.getItem('visits')) {
-    visits = localStorage.getItem('visits');
+  var visitors = 0;
+  if (localStorage.getItem('visitors')) {
+    visitors = localStorage.getItem('visitors');
   }
-  localStorage.setItem('visits', parseInt(visits) + 1);
-  document.write('访问数：' + localStorage.getItem('visits'));
+  localStorage.setItem('visitors', parseInt(visitors) + 1);
+  document.write('访问人数：' + localStorage.getItem('visitors'));
 </script>
 
   </head>
