@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>WebCat</title>
+<script type="text/javascript">
+  var visitors = 0;
+  if (localStorage.getItem('visitors')) {
+    visitors = localStorage.getItem('visitors');
+  }
+  localStorage.setItem('visitors', parseInt(visitors) + 1);
+  document.write('访问人数：' + localStorage.getItem('visitors'));
+</script>
 </head>
 <body>
    <h2>这是我的第一个手机端网站！</h2>
